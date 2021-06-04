@@ -9,7 +9,6 @@
     "additionalBranchPrefix": "js-",
     "commitMessagePrefix": "[Client]",
     "extends": ["group:allNonMajor"],
-    "rangeStrategy": "replace",
     "packageRules": [
       {
         "matchPackagePatterns": ["*"],
