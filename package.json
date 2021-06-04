@@ -57,7 +57,7 @@
     "reselect": "^4.0.0",
     "stringify-object": "^3.3.0",
     "typesafe-actions": "^5.1.0",
-    "typescript": "^4.2.2",
+    "typescript": "4.2.2",
     "uuid": "^8.1.0",
     "yup": "^0.28.3"
   }

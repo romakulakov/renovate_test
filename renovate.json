@@ -1,0 +1,36 @@
+{
+  "extends": ["config:base"],
+  "java": {
+    "additionalBranchPrefix": "java-",
+    "commitMessagePrefix": "[Backend]",
+    "extends": ["group:all"]
+  },
+  "js": {
+    "additionalBranchPrefix": "js-",
+    "commitMessagePrefix": "[Client]",
+    "extends": ["group:allNonMajor"],
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchPackagePatterns": ["*"],
+        "matchUpdateTypes": ["major"],
+        "dependencyDashboardApproval": true
+      },
+      {
+        "matchPackagePatterns": ["^@material-ui/"],
+        "groupName": "material",
+        "groupSlug": "material"
+      },
+      {
+        "matchPackagePatterns": ["yup", "@types/yup"],
+        "separateMinorPatch": true
+      },
+      {
+        "matchPackagePatterns": ["yup", "@types/yup"],
+        "matchUpdateTypes": ["major", "minor"],
+        "enabled": false
+      }
+    ]
+  }
+}
+
