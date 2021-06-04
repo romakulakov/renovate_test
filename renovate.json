@@ -16,7 +16,7 @@
         "dependencyDashboardApproval": true
       },
       {
-        "matchPackagePatterns": ["^axios"],
+        "matchPackageNames": ["axios"],
         "matchUpdateTypes": ["major", "minor", "patch"],
         "enabled": true,
         "groupName": "axios"
