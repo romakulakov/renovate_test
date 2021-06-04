@@ -16,12 +16,6 @@
         "dependencyDashboardApproval": true
       },
       {
-        "matchPackagePatterns": ["^typescript"],
-        "updateTypes": ["major", "minor"],
-        "enabled": true,
-        "groupName": "typescript"
-      },
-      {
         "matchPackagePatterns": ["yup", "@types/yup"],
         "updateTypes": ["major", "minor"],
         "enabled": false
