@@ -18,7 +18,8 @@
       },
       {
         "matchPackagePatterns": ["^@material-ui/"],
-        "groupName": "material"
+        "groupName": "material",
+        "groupSlug": "material"
       },
       {
         "matchPackagePatterns": ["yup", "@types/yup"],
@@ -32,3 +33,4 @@
     ]
   }
 }
+
