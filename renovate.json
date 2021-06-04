@@ -16,6 +16,12 @@
         "dependencyDashboardApproval": true
       },
       {
+        "matchPackagePatterns": ["^axios"],
+        "updateTypes": ["major", "minor"],
+        "enabled": true,
+        "groupName": "axios"
+      },
+      {
         "matchPackagePatterns": ["yup", "@types/yup"],
         "updateTypes": ["major", "minor"],
         "enabled": false
