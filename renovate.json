@@ -12,18 +12,18 @@
     "packageRules": [
       {
         "matchPackagePatterns": ["*"],
-        "updateTypes": ["major"],
+        "matchUpdateTypes": ["major"],
         "enabled": false
       },
       {
         "matchPackagePatterns": ["^react"],
-        "updateTypes": ["minor"],
+        "matchUpdateTypes": ["minor"],
         "enabled": true,
         "groupName": "react"
       },
       {
         "matchPackagePatterns": ["yup", "@types/yup"],
-        "updateTypes": ["major", "minor"],
+        "matchUpdateTypes": ["major", "minor"],
         "enabled": false
       }
     ]
