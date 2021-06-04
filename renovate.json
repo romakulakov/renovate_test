@@ -17,7 +17,7 @@
       },
       {
         "matchPackagePatterns": ["^typescript"],
-        "groupName": "Typescript"
+        "groupName": "typescript"
       },
       {
         "matchPackagePatterns": ["yup", "@types/yup"],
