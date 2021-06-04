@@ -1,31 +1,3 @@
 {
-  "extends": ["config:base"],
-  "java": {
-    "additionalBranchPrefix": "java-",
-    "commitMessagePrefix": "[Backend]",
-    "extends": ["group:all"]
-  },
-  "js": {
-    "additionalBranchPrefix": "js-",
-    "commitMessagePrefix": "[Client]",
-    "extends": ["group:allNonMajor"],
-    "packageRules": [
-      {
-        "matchPackagePatterns": ["*"],
-        "updateTypes": ["major"],
-        "dependencyDashboardApproval": true
-      },
-      {
-        "matchPackagePatterns": ["^axios"],
-        "updateTypes": ["major", "minor"],
-        "enabled": true,
-        "groupName": "axios"
-      },
-      {
-        "matchPackagePatterns": ["yup", "@types/yup"],
-        "updateTypes": ["major", "minor"],
-        "enabled": false
-      }
-    ]
-  }
+  "extends": ["config:base"]
 }
