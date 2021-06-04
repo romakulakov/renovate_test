@@ -17,7 +17,7 @@
       },
       {
         "matchPackagePatterns": ["^axios"],
-        "matchUpdateTypes": ["major", "minor"],
+        "matchUpdateTypes": ["major", "minor", "patch"],
         "enabled": true,
         "groupName": "axios"
       },
