@@ -1,3 +1,31 @@
 {
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "java": {
+    "additionalBranchPrefix": "java-",
+    "commitMessagePrefix": "[Backend]",
+    "extends": ["group:all"]
+  },
+  "js": {
+    "additionalBranchPrefix": "js-",
+    "commitMessagePrefix": "[Client]",
+    "extends": ["group:allNonMajor"],
+    "packageRules": [
+      {
+        "matchPackagePatterns": ["*"],
+        "updateTypes": ["major"],
+        "enabled": false
+      },
+      {
+        "matchPackagePatterns": ["^react"],
+        "updateTypes": ["major", "minor"],
+        "enabled": true,
+        "groupName": "react"
+      },
+      {
+        "matchPackagePatterns": ["yup", "@types/yup"],
+        "updateTypes": ["major", "minor"],
+        "enabled": false
+      }
+    ]
+  }
 }
