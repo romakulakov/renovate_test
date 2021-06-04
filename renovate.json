@@ -13,13 +13,17 @@
       {
         "matchPackagePatterns": ["*"],
         "matchUpdateTypes": ["major"],
-        "enabled": false
+        "dependencyDashboardApproval": true
       },
       {
         "matchPackagePatterns": ["^react"],
-        "matchUpdateTypes": ["minor"],
+        "matchUpdateTypes": ["major", "minor"],
         "enabled": true,
         "groupName": "react"
+      },
+      {
+        "matchPackagePatterns": ["yup", "@types/yup"],
+        "separateMinorPatch": true
       },
       {
         "matchPackagePatterns": ["yup", "@types/yup"],
