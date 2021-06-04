@@ -17,7 +17,7 @@
       },
       {
         "matchPackagePatterns": ["^react"],
-        "updateTypes": ["major", "minor"],
+        "updateTypes": ["minor"],
         "enabled": true,
         "groupName": "react"
       },
