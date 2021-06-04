@@ -9,6 +9,7 @@
     "additionalBranchPrefix": "js-",
     "commitMessagePrefix": "[Client]",
     "extends": ["group:allNonMajor"],
+    "rangeStrategy": "bump",
     "packageRules": [
       {
         "matchPackagePatterns": ["*"],
@@ -16,10 +17,8 @@
         "dependencyDashboardApproval": true
       },
       {
-        "matchPackagePatterns": ["^axios"],
-        "matchUpdateTypes": ["major", "minor", "patch"],
-        "enabled": true,
-        "groupName": "axios"
+        "matchPackagePatterns": ["^@material-ui/"],
+        "groupName": "material"
       },
       {
         "matchPackagePatterns": ["yup", "@types/yup"],
