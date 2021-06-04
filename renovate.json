@@ -17,6 +17,8 @@
       },
       {
         "matchPackagePatterns": ["^typescript"],
+        "updateTypes": ["major", "minor"],
+        "enabled": true,
         "groupName": "typescript"
       },
       {
